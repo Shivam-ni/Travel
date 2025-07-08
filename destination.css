@@ -1,4 +1,5 @@
-*F{
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  color: #2d3748;
+  color: #03aed8;
   overflow-x: hidden;
 }
 
@@ -22,7 +23,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(6, 129, 24, 0.95);
+  background: rgba(239, 241, 242, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
@@ -41,7 +42,7 @@ body {
 .nav-logo .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0f6ec7;
+  color: #3182ce;
 }
 
 .nav-menu {
@@ -52,7 +53,7 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  color: #0cc136;
+  color: #2d3748;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -70,19 +71,19 @@ body {
 }
 
 .btn-primary {
-  background: #3182ce;
+  background: #129345;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #2c5aa0;
+  background: #2abe6f;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #3182ce;
-  border: 2px solid #3182ce;
+  color: #a5a9a7;
+  border: 2px solid #090f01;
 }
 
 .btn-secondary:hover {
@@ -95,7 +96,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2eec41 0%, #1568c2 100%);
   padding-top: 80px;
   color: white;
   position: relative;
@@ -194,10 +195,10 @@ body {
 }
 
 .main-destination {
-  background: rgb(104, 4, 4);
+  background: white;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(98, 12, 12, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #2d3748;
   max-width: 300px;
@@ -415,7 +416,7 @@ body {
 /* Packages Section */
 .packages {
   padding: 5rem 0;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 .packages-grid {
@@ -427,7 +428,7 @@ body {
 .package-card {
   text-align: center;
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: 15px;
   background: #f7fafc;
   transition: transform 0.3s ease;
   border: 2px solid transparent;
@@ -439,7 +440,7 @@ body {
 }
 
 .package-icon {
-  font-size: 3rem;
+  font-size: 10rem;
   margin-bottom: 1rem;
 }
 
@@ -502,6 +503,7 @@ body {
 }
 
 .newsletter-content p {
+  text-align: center;
   margin-bottom: 2rem;
   color: #e2e8f0;
 }
@@ -525,35 +527,36 @@ body {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
-
 /* Footer */
 .footer {
-  background: #2d3748;
-  color: white;
-  padding: 3rem 0 1rem;
+  background-color: #1f1f1f;
+  color: #eee;
+  padding: 4rem 1.5rem 1.5rem;
+  margin-top: 4rem;
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
 }
 
-.footer-section h3,
-.footer-section h4 {
+.footer-section h4,
+.footer-section h3 {
   margin-bottom: 1rem;
-  color: #3182ce;
+  color: #03aed8;
+  font-weight: 600;
 }
 
-.footer-section p {
-  color: #cbd5e0;
+.footer-section p,
+.footer-section ul {
+  font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
 }
 
 .footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
@@ -561,35 +564,22 @@ body {
 }
 
 .footer-section ul li a {
-  color: #cbd5e0;
+  color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #3182ce;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-link {
-  display: inline-block;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.social-link:hover {
-  transform: scale(1.2);
+  color: #fff;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid #4a5568;
-  color: #cbd5e0;
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
 }
 
 /* Responsive Design */
@@ -640,4 +630,4 @@ body {
   .destinations-grid {
     grid-template-columns: 1fr;
   }
-} 
+}
